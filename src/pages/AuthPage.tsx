@@ -41,12 +41,15 @@ export default function AuthPage() {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="w-full max-w-md p-8 space-y-6 bg-card rounded-lg shadow-lg border">
+    <div className="min-h-screen flex items-center justify-center bg-background p-4">
+      <div className="w-full max-w-md p-8 space-y-6 bg-card rounded-lg shadow-lg border border-border">
         <div className="text-center">
-          <h1 className="text-2xl font-bold text-foreground">Sales DNA</h1>
-          <p className="text-muted-foreground mt-2">
-            {isLogin ? 'Sign in to your account' : 'Create a new account'}
+          <h1 className="text-3xl font-bold text-foreground mb-2">Sales DNA</h1>
+          <p className="text-muted-foreground">
+            {isLogin ? 'Melden Sie sich in Ihr Konto an' : 'Erstellen Sie ein neues Konto'}
+          </p>
+          <p className="text-xs text-muted-foreground mt-2">
+            {isLogin ? 'Noch kein Konto? Registrieren Sie sich unten.' : 'Bereits ein Konto? Melden Sie sich an.'}
           </p>
         </div>
 
